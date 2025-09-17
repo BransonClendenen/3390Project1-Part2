@@ -71,7 +71,7 @@ offset_bottom = 100.0
 theme_override_font_sizes/font_size = 25
 text = "Add"
 
-[node name="buttonAdd2" type="Button" parent="GUI/botBar"]
+[node name="buttonRemove" type="Button" parent="GUI/botBar"]
 custom_minimum_size = Vector2(250, 100)
 layout_mode = 0
 offset_left = 860.0
