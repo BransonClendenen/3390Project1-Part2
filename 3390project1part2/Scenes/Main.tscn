@@ -2,9 +2,9 @@
 
 [sub_resource type="Theme" id="Theme_c1w88"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Controller" type="Node2D"]
 
-[node name="Interface" type="Control" parent="."]
+[node name="GUI" type="Control" parent="."]
 modulate = Color(0.170795, 0.197344, 0.662429, 1)
 custom_minimum_size = Vector2(1152, 648)
 layout_mode = 3
@@ -12,15 +12,70 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="ScrollContainer" type="ScrollContainer" parent="Interface"]
+[node name="ScrollContainer" type="ScrollContainer" parent="GUI"]
 custom_minimum_size = Vector2(1152, 448)
 layout_mode = 0
 offset_top = 100.0
 offset_right = 1152.0
-offset_bottom = 571.0
+offset_bottom = 548.0
 theme = SubResource("Theme_c1w88")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Interface/ScrollContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+
+[node name="topBar" type="ColorRect" parent="GUI"]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 103.0
+
+[node name="Label" type="Label" parent="GUI/topBar"]
+layout_mode = 2
+offset_right = 1152.0
+offset_bottom = 103.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 75
+text = "Make a Decision"
+horizontal_alignment = 1
+
+[node name="botBar" type="ColorRect" parent="GUI"]
+layout_mode = 0
+offset_top = 548.0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="inputOption" type="TextEdit" parent="GUI/botBar"]
+layout_mode = 0
+offset_left = 35.0
+offset_right = 435.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 25
+placeholder_text = "Option Input"
+
+[node name="inputWeight" type="TextEdit" parent="GUI/botBar"]
+layout_mode = 0
+offset_left = 460.0
+offset_right = 560.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 25
+placeholder_text = "Weight
+"
+
+[node name="buttonAdd" type="Button" parent="GUI/botBar"]
+custom_minimum_size = Vector2(250, 100)
+layout_mode = 0
+offset_left = 585.0
+offset_right = 835.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 25
+text = "Add"
+
+[node name="buttonAdd2" type="Button" parent="GUI/botBar"]
+custom_minimum_size = Vector2(250, 100)
+layout_mode = 0
+offset_left = 860.0
+offset_right = 1110.0
+offset_bottom = 100.0
+theme_override_font_sizes/font_size = 25
+text = "Remove"
