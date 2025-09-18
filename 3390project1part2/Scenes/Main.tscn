@@ -30,14 +30,13 @@ layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 103.0
 
-[node name="Label" type="Label" parent="GUI/topBar"]
-layout_mode = 2
-offset_right = 1152.0
-offset_bottom = 103.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 75
-text = "Make a Decision"
-horizontal_alignment = 1
+[node name="Button" type="Button" parent="GUI/topBar"]
+layout_mode = 0
+offset_left = 300.0
+offset_right = 847.0
+offset_bottom = 101.0
+theme_override_font_sizes/font_size = 68
+text = "Make A Decision"
 
 [node name="botBar" type="ColorRect" parent="GUI"]
 layout_mode = 0
@@ -79,3 +78,5 @@ offset_right = 1110.0
 offset_bottom = 100.0
 theme_override_font_sizes/font_size = 25
 text = "Remove"
+
+[node name="Model" type="Node" parent="."]
