@@ -1,11 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://blb2qv81c56ee"]
+[gd_scene load_steps=5 format=3 uid="uid://blb2qv81c56ee"]
 
-[ext_resource type="Script" uid="uid://quxxhd4ysmll" path="res://GUI.gd" id="1_idj7w"]
+[ext_resource type="Script" uid="uid://quxxhd4ysmll" path="res://Scripts/GUI.gd" id="1_idj7w"]
+[ext_resource type="Script" uid="uid://cdvx5jcwvxli8" path="res://Scripts/Controller.gd" id="1_kln2b"]
 [ext_resource type="Script" uid="uid://d1c5hjou0ia5b" path="res://Scripts/model.gd" id="1_r150o"]
 
 [sub_resource type="Theme" id="Theme_c1w88"]
 
 [node name="Controller" type="Node"]
+script = ExtResource("1_kln2b")
 
 [node name="GUI" type="Control" parent="."]
 modulate = Color(0.170795, 0.197344, 0.662429, 1)

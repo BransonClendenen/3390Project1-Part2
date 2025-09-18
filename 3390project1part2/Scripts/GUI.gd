@@ -19,3 +19,4 @@ func _on_list_changed(new_items):
 
 func _on_decision_made(item: Dictionary):
 	result_label.text = "Chosen: %s + %s" % [item["option"], item["weight"]]
+	print(result_label.text)
