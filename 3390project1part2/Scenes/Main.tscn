@@ -36,7 +36,7 @@ layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 103.0
 
-[node name="Button" type="Button" parent="GUI/topBar"]
+[node name="buttonDecision" type="Button" parent="GUI/topBar"]
 layout_mode = 0
 offset_left = 300.0
 offset_right = 847.0
