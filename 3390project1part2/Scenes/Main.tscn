@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://blb2qv81c56ee"]
+[gd_scene load_steps=3 format=3 uid="uid://blb2qv81c56ee"]
+
+[ext_resource type="Script" uid="uid://d1c5hjou0ia5b" path="res://Scripts/model.gd" id="1_r150o"]
 
 [sub_resource type="Theme" id="Theme_c1w88"]
 
-[node name="Controller" type="Node2D"]
+[node name="Controller" type="Node"]
 
 [node name="GUI" type="Control" parent="."]
 modulate = Color(0.170795, 0.197344, 0.662429, 1)
@@ -80,3 +82,4 @@ theme_override_font_sizes/font_size = 25
 text = "Remove"
 
 [node name="Model" type="Node" parent="."]
+script = ExtResource("1_r150o")
