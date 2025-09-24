@@ -1,6 +1,6 @@
-extends ColorRect
+#extends ColorRect
 
-@onready var label: Label = $Label
+@onready var label: Label = $listLabel
 
 func setup(data: Dictionary):
 	if label == null:

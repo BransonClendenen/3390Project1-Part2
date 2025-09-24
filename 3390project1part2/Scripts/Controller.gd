@@ -1,4 +1,4 @@
-extends Node
+#extends Node
 
 #@export var option_input: LineEdit 
 #@export var weight_input: LineEdit

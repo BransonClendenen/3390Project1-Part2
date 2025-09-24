@@ -1,4 +1,4 @@
-extends Node
+#extends Node
 
 var items: Array = []
 signal list_changed(new_items)

@@ -1,4 +1,4 @@
-extends Control
+#extends Control
 
 #@export var container: VBoxContainer
 #@export var item_scene: PackedScene

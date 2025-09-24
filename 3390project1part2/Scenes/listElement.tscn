@@ -1,14 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://cgb3vtikto20p"]
-
-[ext_resource type="Script" uid="uid://hpvixjxhenqk" path="res://Scripts/listElement.gd" id="1_p7o44"]
+[gd_scene format=3 uid="uid://cgb3vtikto20p"]
 
 [node name="ColorRect" type="ColorRect"]
 custom_minimum_size = Vector2(1152, 50)
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("1_p7o44")
 
-[node name="Label" type="Label" parent="."]
+[node name="listLabel" type="Label" parent="."]
 layout_mode = 0
 offset_top = 7.0
 offset_right = 1151.0
