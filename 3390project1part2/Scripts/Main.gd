@@ -76,7 +76,7 @@ func display_array() -> void:
 func _process(delta):
 	if Input.is_action_just_pressed("enter_pressed"):
 		_on_button_add_pressed()
-	if Input.is_action_just_pressed("backspace_pressed"):
+	if Input.is_action_just_pressed("delete_pressed"):
 		_on_button_remove_pressed()
 	if Input.is_action_just_pressed("space_pressed"):
 		_on_button_decision_pressed()
