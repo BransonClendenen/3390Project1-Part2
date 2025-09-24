@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c0mhry1qle6ts" path="res://Scripts/Main.gd" id="1_r150o"]
 
 [sub_resource type="Theme" id="Theme_c1w88"]
+Label/font_sizes/font_size = 50
 
 [node name="Game" type="Node"]
 script = ExtResource("1_r150o")
