@@ -47,7 +47,6 @@ func _on_button_add_pressed() -> void:
 	
 	if weight == "":
 		weight = 1
-		return
 	
 	var entry = {
 		"option": option,
