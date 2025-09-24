@@ -27,7 +27,10 @@ func _on_button_decision_pressed() -> void:
 	for item in list:
 		running_sum += item["weight"]
 		if r < running_sum:
-			print("Selected:", item["option"])
+			var window = AcceptDialog.new()
+			window.set_text("You Should:" + item["option"] +"!")
+			add_child(window)
+			window.popup_centered()
 			break
 
 func _on_button_add_pressed() -> void:
@@ -35,6 +38,8 @@ func _on_button_add_pressed() -> void:
 	var weight = input_weight.text.strip_edges()
 	
 	if option == "" or weight == "":
+		input_option.clear()
+		input_weight.clear()
 		return
 	
 	var entry = {
