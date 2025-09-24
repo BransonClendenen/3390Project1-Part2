@@ -13,6 +13,9 @@ extends Node
 @onready var vbox: VBoxContainer = $GUI/ScrollContainer/VBoxContainer
 var list = [];
 
+func _ready():
+	input_option.grab_focus()
+
 #event listeners
 func _on_button_decision_pressed() -> void:
 	var total_weight = 0
@@ -37,9 +40,13 @@ func _on_button_add_pressed() -> void:
 	var option = input_option.text.strip_edges()
 	var weight = input_weight.text.strip_edges()
 	
-	if option == "" or weight == "":
+	if option == "":
 		input_option.clear()
 		input_weight.clear()
+		return
+	
+	if weight == "":
+		weight = 1
 		return
 	
 	var entry = {
@@ -72,3 +79,5 @@ func _process(delta):
 		_on_button_add_pressed()
 	if Input.is_action_just_pressed("backspace_pressed"):
 		_on_button_remove_pressed()
+	if Input.is_action_just_pressed("space_pressed"):
+		_on_button_decision_pressed()

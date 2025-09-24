@@ -82,5 +82,7 @@ theme_override_font_sizes/font_size = 25
 text = "Remove"
 
 [connection signal="pressed" from="GUI/topBar/buttonDecision" to="." method="_on_button_decision_pressed"]
+[connection signal="focus_entered" from="GUI/botBar/inputOption" to="." method="_on_input_option_focus_entered"]
+[connection signal="focus_entered" from="GUI/botBar/inputWeight" to="." method="_on_input_weight_focus_entered"]
 [connection signal="pressed" from="GUI/botBar/buttonAdd" to="." method="_on_button_add_pressed"]
 [connection signal="pressed" from="GUI/botBar/buttonRemove" to="." method="_on_button_remove_pressed"]
