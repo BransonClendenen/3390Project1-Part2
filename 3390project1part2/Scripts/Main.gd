@@ -65,3 +65,10 @@ func display_array() -> void:
 		var label = Label.new()
 		label.text = "%s (Weight: %d)" % [item["option"], item["weight"]]
 		vbox.add_child(label)
+
+#keyboard input implementation
+func _process(delta):
+	if Input.is_action_just_pressed("enter_pressed"):
+		_on_button_add_pressed()
+	if Input.is_action_just_pressed("backspace_pressed"):
+		_on_button_remove_pressed()
